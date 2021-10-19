@@ -1,0 +1,59 @@
+#TASK#1
+
+result = int(input('введите число: '))
+print(result +2)
+#TASK#2
+
+#solution#1
+
+user_num = int(input('введите число: '))``
+while user_num > 10:
+#print('введите другое меньше число')
+#user_num = int(input('введите число: '))
+print ("Ваше число:", user_num **2)
+#solution#2
+
+while True:
+user_num = int(input('Введите число: '))
+if user_num >= 10 and user_num <= 20:
+print("Ваше число во второй степени:", user_num **2)
+break
+elif user_num <= 10:
+print("Введите число болше")
+elif user_num >= 20:
+print("Введите число меньше")
+else:
+print("Введите другое число ")
+#TASK#3
+
+print("Медицинская анкета")
+name = str(input('Напишите Ваше Имя:'))
+surname = str(input('Напишите Вашу Фаилию:'))
+age = int(input('Напишите Ваш возраст:'))
+weight = int(input('Напишите Ваш вес:'))
+if 0 <= age <= 18 and (50 <= weight <= 70):
+print ("Береги здоровье с молоду")
+elif 0 <= age <= 18 and (70 <= weight <= 150):
+print(name, surname, "ваш возраст", age, "и", "ваш вес", weight, " - Вам надо срочно скинуть жирок")
+elif 0 <= age <= 18 and (25 <= weight <= 70):
+print(name, surname, "ваш возраст", age, "и", "ваш вес", weight, " - Надо кушать кашку")
+elif 0 <= age <= 18 and (10 <= weight <= 25):
+print(name, surname, "ваш возраст", age, "и", "ваш вес", weight, " - Надо кушать кашку и мясо и в зал ходить")
+elif 19 <= age <= 30 and (50 <= weight <= 90):
+print(name, surname, "ваш возраст", age, "и", "ваш вес", weight," - Вы в хорошем состоянии")
+elif 19 <= age <= 30 and (90 <= weight <= 150):
+print(name, surname, "ваш возраст", age, "и", "ваш вес", weight, " - Вам надо срочно скинуть жирок")
+elif 19 <= age <= 30 and (25 <= weight <= 50):
+print(name, surname, "ваш возраст", age, "и", "ваш вес", weight, " - Вам надо срочно обратиться к врачу")
+elif 30 <= age <= 65 and (50 <= weight <= 90):
+print(name, surname, "ваш возраст", age, "и", "ваш вес", weight," - Вы в хорошем состоянии")
+elif 30 <= age <= 65 and (90 <= weight <= 150):
+print(name, surname, "ваш возраст", age, "и", "ваш вес", weight, " - Вам надо срочно скинуть жирок")
+elif 30 <= age <= 65 and (0 <= weight <= 50):
+print(name, surname, "ваш возраст", age, "и", "ваш вес", weight, " - Вам надо срочно обратиться к врачу")
+elif 65 <= age <= 110 and (70 <= weight <= 120):
+print(name, surname, "На пенсии нужно отдыхать")
+elif 65 <= age <= 110 or (120 <= weight <= 150):
+print(name, surname, "ваш возраст", age, "и", "ваш вес", weight, " - Как вы дожили до такого возраста с таким весом")
+elif 110 <= age or (0 <= weight <= 250):
+print(name, surname, "ваш возраст", age, "и", "ваш вес", weight, " - Вы не человек")
